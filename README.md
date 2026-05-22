@@ -76,7 +76,7 @@ Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lạ
 
 ### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
 - Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
-- Mở chương trình mẫu **"MKE_S16_I2C_5C_LineTracking_Serial_XXX"** tại **File / Examples / MKE_ONE / Sensor / MKE_S16_I2C_5C_LineTracking**
+- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S16_I2C_5C_LineTracking**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
 - Cấp nguồn 5VDC cho mạch, kết nối chân SDA và SCL của Sensor với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
