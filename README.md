@@ -10,7 +10,7 @@ Cảm biến được tích hợp vi điều khiển MCU thông minh với tính
 
 Sản phẩm đặc biệt phù hợp cho các mô hình robot, dự án STEM, đồ án học tập và thực hành điện – điện tử, giúp người học dễ dàng tiếp cận nguyên lý cảm biến hồng ngoại, kỹ thuật dò line, giao tiếp I2C và xử lý tín hiệu số trong các hệ thống robot thực tế. Đây là công cụ lý tưởng cho học sinh, sinh viên, giáo viên giảng dạy STEM và những người yêu thích nghiên cứu sáng tạo robot.
 
-MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nối trực tiếp và an toàn với Arduino, Raspberry Pi, NVIDIA, Micro:bit Educational Foundation và nhiều nền tảng điều khiển khác. Sản phẩm đi kèm cáp kết nối 4P XH2.54 – Dupont, đảm bảo kết nối chắc chắn, ổn định và thuận tiện trong quá trình lắp đặt và sử dụng.
+MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nối trực tiếp và an toàn với Arduino, Raspberry Pi, NVIDIA Jetson, Micro:bit và nhiều nền tảng điều khiển khác. Sản phẩm đi kèm cáp kết nối 4P XH2.54 – Dupont, đảm bảo kết nối chắc chắn, ổn định và thuận tiện trong quá trình lắp đặt và sử dụng.
 
 ## Thông số kỹ thuật
 - Điện áp hoạt động: 5VDC
