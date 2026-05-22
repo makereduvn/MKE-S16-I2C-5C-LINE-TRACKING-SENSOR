@@ -52,7 +52,7 @@ MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nố
 ### Cấu hình và kiểm tra địa chỉ I2C
 > - Nhấn 1 lần (click) trên button S1. Lúc này, từ LED1 đến LED5 sẽ nhấp nháy 3 lần, mỗi lần 1s (sáng 500ms, tối 500ms). Tùy thuộc vào số lượng sẽ tương ứng với từng địa chỉ.
 > - Nhấn 2 lần (double-click) trên button S1 sẽ vào chế độ chọn địa chỉ I2C. Lúc này LED1 đến LED5 sẽ nhấp nháy. Địa chỉ I2C phụ thuộc vào số LED đang nhấp nháy. Có thể nhấn 2 lần (double-click) để chuyển đổi giữa các địa chỉ từ 0x2A đến 0x2F.
-![MKE-S16 I2C_5C_LineTracking](/extras/MKE-MS16_0.png)
+![MKE-S16 I2C_5C_LineTracking](/extras/MKE-S16_0.png)
 > Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lại địa chỉ I2C đã chọn. Lúc này 5 LED sẽ nhấp nháy liên tục 5 lần, mỗi lần 200ms rồi tắt.
 
 ### Canh chỉnh ngưỡng (calibrate)
@@ -85,8 +85,8 @@ MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nố
 Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT** trên [Microsoft MakeCode](https://makecode.microbit.org/) theo [hướng dẫn tại đây](https://github.com/makereduvn/MKE_ONE_MICROBIT). Sau khi cài đặt thành công, các khối lệnh của Extension **MKE_ONE_MICROBIT** sẽ xuất hiện trong danh sách block và sẵn sàng để sử dụng.
 
 ## Kích thước sản phẩm
-![MKE-S16 I2C_5C_LineTracking](/extras/MKE-MS16_1.jpg)
+![MKE-S16 I2C_5C_LineTracking](/extras/MKE-S16_1.jpg)
 
 ## Hình ảnh sản phẩm
-![MKE-S16 I2C_5C_LineTracking](/extras/MKE-MS16_2.png)
-![MKE-S16 I2C_5C_LineTracking](/extras/MKE-MS16_3.png)
+![MKE-S16 I2C_5C_LineTracking](/extras/MKE-S16_2.png)
+![MKE-S16 I2C_5C_LineTracking](/extras/MKE-S16_3.png)
