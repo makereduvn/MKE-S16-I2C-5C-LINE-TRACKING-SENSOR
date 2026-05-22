@@ -46,6 +46,11 @@ MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nố
 | 5V  | Nguồn dương 5VDC |
 | SDA  | Chân I2C Data |
 | SCL  | Chân I2C Clock |
+| P1  | Sensor 1 Digital Signal (High/Low) |
+| P2  | Sensor 2 Digital Signal (High/Low) |
+| P3  | Sensor 3 Digital Signal (High/Low) |
+| P4  | Sensor 4 Digital Signal (High/Low) |
+| P5  | Sensor 5 Digital Signal (High/Low) |
 
 ## Hướng dẫn cấu hình
 
