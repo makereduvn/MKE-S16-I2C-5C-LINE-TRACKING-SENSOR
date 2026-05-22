@@ -53,11 +53,13 @@ MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nố
 - Nhấn 1 lần (click) trên button S1. Lúc này, từ LED1 đến LED5 sẽ nhấp nháy 3 lần, mỗi lần 1s (sáng 500ms, tối 500ms). Tùy thuộc vào số lượng sẽ tương ứng với từng địa chỉ.
 - Nhấn 2 lần (double-click) trên button S1 sẽ vào chế độ chọn địa chỉ I2C. Lúc này LED1 đến LED5 sẽ nhấp nháy. Địa chỉ I2C phụ thuộc vào số LED đang nhấp nháy. Có thể nhấn 2 lần (double-click) để chuyển đổi giữa các địa chỉ từ 0x2A đến 0x2F.
 ![MKE-S16 I2C_5C_LineTracking](/extras/MKE-S16_0.png)
-> Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lại địa chỉ I2C đã chọn. Lúc này 5 LED sẽ nhấp nháy liên tục 5 lần, mỗi lần 200ms rồi tắt.
+
+Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lại địa chỉ I2C đã chọn. Lúc này 5 LED sẽ nhấp nháy liên tục 5 lần, mỗi lần 200ms rồi tắt.
 
 ### Canh chỉnh ngưỡng (calibrate)
 - Khoảng cách lý tưởng của cảm biến với mặt đất là từ 0.5cm - 1cm
 - Khi canh chỉnh thì phải để cảm biến tiếp xúc với màu **tối hơn**
+
 Đặt cảm biến vào vùng có màu tối hơn, nhấn giữ (long-click) button S1 để cảm biến tính toán độ nhạy (ngưỡng nhận). Các LED từ 1 đến 5 sẽ chớp 10 lần, mỗi lần 200ms.
 
 ## Hướng dẫn sử dụng
