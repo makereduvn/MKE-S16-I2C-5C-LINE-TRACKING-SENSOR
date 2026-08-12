@@ -14,7 +14,6 @@ MKE-S16 hỗ trợ điện áp giao tiếp 3.3VDC và 5VDC, cho phép kết nố
 
 ## Thông số kỹ thuật
 - Điện áp hoạt động: 5VDC
-- Dòng điện tiêu thụ khi hoạt động: khoảng 200mA
 - Chuẩn giao tiếp:
   - I2C
   - Digital Output
