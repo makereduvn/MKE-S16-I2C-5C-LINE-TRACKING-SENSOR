@@ -69,16 +69,69 @@ Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lạ
 ## Hướng dẫn sử dụng
 
 ### Hướng dẫn kết nối
-- Cấp nguồn 5VDC cho mạch qua hai chân GND và 5V.
-- Kết nối chân SCL của Sensor với chân I2C Clock của mạch điều khiển.
-- Kết nối chân SDA của Sensor với chân I2C Data của mạch điều khiển.
+- Cấp nguồn 5VDC cho mạch qua hai chân `GND` và `5V`
+- Kết nối chân `SCL` của cảm biến với chân I2C Clock của mạch điều khiển.
+- Kết nối chân `SDA` của cảm biến với chân I2C Data của mạch điều khiển.
 
-### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
-- Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
-- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S16_I2C_5C_LineTracking**
+### Hướng dẫn sử dụng với Arduino / ESP32
+- Trong Github của bộ thư viện, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
+- Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** để cài đặt bộ thư viện.
+- Mở chương trình mẫu tại **File / Examples / MKE_S16_LineTracking**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
-- Cấp nguồn 5VDC cho mạch, kết nối chân SDA và SCL của Sensor với chân điều khiển được khai báo trong chương trình.
+- Cấp nguồn 5VDC cho mạch, kết nối chân `SDA` và `SCL` của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
+
+#### Chương trình mẫu cho Arduino Uno / ESP32:
+```ino
+// Thêm bộ thư viện
+// Add the library.
+#include "MKE_S16_LineTracking.h"
+
+MKE_I2C_5C_LineTracking LineFollowSensor;
+
+void setup()
+{
+  // Khởi động kết nối Serial UART ở tốc độ 115200 để truyền dữ liệu lên máy tính.
+  // Start the Serial UART connection at 115200 to transfer data to the computer.
+  Serial.begin(115200);
+
+  LineFollowSensor.setup(0x2A);
+}
+
+void loop()
+{
+  /************ SENSOR *************/
+    /*-------------------------------*/
+    /* |LEFT| P1 P2 P3 P4 P5 |RIGHT| */
+    /*     0b 1  1  1  1  1          */
+    /*         0: White;             */
+    /*         1: Black              */
+    /*-------------------------------*/
+  // Đọc giá trị cảm biến
+  // Get value
+  LineFollowSensor.getData();
+
+  // Hiển thị giá trị đo được của cảm biến lên máy tính.
+  // Show the sensor value on Arduno Serial Monitor
+  Serial.print("P1:");
+  Serial.print(LineFollowSensor.getValue(0));
+  Serial.print(" P2:");
+  Serial.print(LineFollowSensor.getValue(1));
+  Serial.print(" P3:");
+  Serial.print(LineFollowSensor.getValue(2));
+  Serial.print(" P4:");
+  Serial.print(LineFollowSensor.getValue(3));
+  Serial.print(" P5:");
+  Serial.print(LineFollowSensor.getValue(4));
+
+  Serial.print(" data:");
+  Serial.println(LineFollowSensor.getValue(), BIN);
+  
+  // Chờ 100ms
+  // Wait 100ms
+  delay(100);
+}
+```
 
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 
