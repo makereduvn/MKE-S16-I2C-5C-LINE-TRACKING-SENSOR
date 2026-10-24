@@ -74,8 +74,9 @@ Sau khi chọn địa chỉ, nhấn giữ button S1 (long-click) để lưu lạ
 - Kết nối chân `SDA` của cảm biến với chân I2C Data của mạch điều khiển.
 
 ### Hướng dẫn sử dụng với Arduino / ESP32
-- Trong Github của bộ thư viện, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
-- Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** để cài đặt bộ thư viện.
+- Trong Github của sản phẩm, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
+- Tương tự tải thêm bộ thư viện phụ thuộc `kxnTask` tại đây: [https://github.com/makereduvn/kxnTask](https://github.com/makereduvn/kxnTask)
+- Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** và cài đặt cả 2 bộ thư viện.
 - Mở chương trình mẫu tại **File / Examples / MKE_S16_LineTracking**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
 - Cấp nguồn 5VDC cho mạch, kết nối chân `SDA` và `SCL` của cảm biến với chân điều khiển được khai báo trong chương trình.
